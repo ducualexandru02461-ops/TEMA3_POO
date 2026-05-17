@@ -1,6 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include "proiect2.h"
+#include "proiect3.h"
 
 int main() {
 
