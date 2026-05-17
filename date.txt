@@ -1,0 +1,24 @@
+FMI
+Bucuresti
+
+STUDENTI
+Ion Popescu
+INFO
+Maria Ionescu
+MATE
+Mihai Constantin
+INFO
+
+PROFESORI
+Popa
+POO
+5
+101
+Ionescu
+Algebra
+4
+234
+
+SECRETARI
+Ana Popescu Secretariat 5
+Mihai Ionescu Administrativ 10
