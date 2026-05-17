@@ -1,11 +1,9 @@
-#ifndef PROIECT2_H_INCLUDED
-#define PROIECT2_H_INCLUDED
+#ifndef PROIECT3_H_INCLUDED
+#define PROIECT3_H_INCLUDED
 #include <iostream>
 #include <vector>
 #include <string>
 #include <exception>
-
-
 ///EXCEPTII///
 
 class EroareBD : public std::exception{
