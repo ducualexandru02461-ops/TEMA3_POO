@@ -48,7 +48,6 @@ int main() {
         std::string numeProf, numeCurs;
         int credite;
 
-        // MODIFICARE AICI: Schimbat din int in std::string pentru compatibilitate cu clasa Profesor
         std::string cod;
 
         while (std::getline(fin, numeProf)) {
@@ -56,11 +55,9 @@ int main() {
 
             std::getline(fin, numeCurs);
 
-            // Citim creditele (int) si apoi codul ca string
             fin >> credite >> cod;
             fin.ignore();
 
-            // MODIFICARE AICI: Instantiem ca Curs<std::string>
             Curs<std::string> c = CursFactory::creeazaCurs(numeCurs, credite, cod);
             f.profesori.push_back(Profesor(numeProf, c));
         }
@@ -130,7 +127,7 @@ int main() {
                             catch (const std::exception& e) {
                                 ok = 0;
                                 std::cout << e.what();
-                                delete p; // Eliberam memoria daca adaugarea a esuat din cauza duplicatului
+                                delete p;
                                 p = nullptr;
                             }
                             if (ok == 1)
