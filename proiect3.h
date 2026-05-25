@@ -70,7 +70,7 @@ public:
     std::string getDomeniu() const { return domeniu; }
 };
 
-/// CURS (Templatizat) ///
+/// CURS ///
 template <typename T>
 class Curs {
     std::string nume;
@@ -176,7 +176,7 @@ public:
     std::vector<Secretar> secretari;
     std::vector<Persoana*> persoane;
 
-    static Facultate& getInstance() {
+    static Facultate& getInstance() { //o singura instanta globala
         static Facultate instance;
         return instance;
     }
@@ -239,7 +239,7 @@ public:
 
 class PersoanaFactory {
 public:
-    static Persoana* creeazaPersoana(int tip) {
+    static Persoana* creeazaPersoana(int tip) {//static pt ca nu mai e nevoie sa cream un obiect
         if (tip == 1) return new Student();
         if (tip == 2) return new Profesor();
         if (tip == 3) return new Secretar();
